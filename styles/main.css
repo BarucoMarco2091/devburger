@@ -1,2 +1,335 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.about {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 10dvh;
+}
+.about div {
+  flex: 1;
+}
+.about .about-text {
+  margin-right: 2dvh;
+}
+.about .about-text h1 {
+  font-size: 3.5rem;
+  color: #fcbf49;
+  margin-bottom: 7dvh;
+  text-align: center;
+}
+.about .about-text p {
+  color: #fcbf49;
+  line-height: 2rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15dvh;
+  max-width: 1240px;
+  margin: auto;
+}
+.menu h2 {
+  color: #fcbf49;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 5dvh;
+}
+.menu .menu-paragraph {
+  color: #fcbf49;
+  text-align: center;
+  margin-bottom: 5dvh;
+}
+.menu .burger-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  border-radius: 2dvh;
+  overflow: hidden;
+}
+.menu .burger-container .burger-options {
+  padding: 4dvh 4dvh;
+}
+.menu .burger-container .burger-options .first-option,
+.menu .burger-container .burger-options .second-option,
+.menu .burger-container .burger-options .third-option,
+.menu .burger-container .burger-options .fourth-option {
+  border-bottom: 1px dashed #444444;
+  margin: 4dvh 4dvh;
+}
+.menu .burger-container .burger-options .first-option .cheese-burger,
+.menu .burger-container .burger-options .first-option .picanha-burger,
+.menu .burger-container .burger-options .first-option .fries,
+.menu .burger-container .burger-options .first-option .big-special,
+.menu .burger-container .burger-options .second-option .cheese-burger,
+.menu .burger-container .burger-options .second-option .picanha-burger,
+.menu .burger-container .burger-options .second-option .fries,
+.menu .burger-container .burger-options .second-option .big-special,
+.menu .burger-container .burger-options .third-option .cheese-burger,
+.menu .burger-container .burger-options .third-option .picanha-burger,
+.menu .burger-container .burger-options .third-option .fries,
+.menu .burger-container .burger-options .third-option .big-special,
+.menu .burger-container .burger-options .fourth-option .cheese-burger,
+.menu .burger-container .burger-options .fourth-option .picanha-burger,
+.menu .burger-container .burger-options .fourth-option .fries,
+.menu .burger-container .burger-options .fourth-option .big-special {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .burger-container .burger-options .first-option .cheese-burger .paragraph,
+.menu .burger-container .burger-options .first-option .picanha-burger .paragraph,
+.menu .burger-container .burger-options .first-option .fries .paragraph,
+.menu .burger-container .burger-options .first-option .big-special .paragraph,
+.menu .burger-container .burger-options .second-option .cheese-burger .paragraph,
+.menu .burger-container .burger-options .second-option .picanha-burger .paragraph,
+.menu .burger-container .burger-options .second-option .fries .paragraph,
+.menu .burger-container .burger-options .second-option .big-special .paragraph,
+.menu .burger-container .burger-options .third-option .cheese-burger .paragraph,
+.menu .burger-container .burger-options .third-option .picanha-burger .paragraph,
+.menu .burger-container .burger-options .third-option .fries .paragraph,
+.menu .burger-container .burger-options .third-option .big-special .paragraph,
+.menu .burger-container .burger-options .fourth-option .cheese-burger .paragraph,
+.menu .burger-container .burger-options .fourth-option .picanha-burger .paragraph,
+.menu .burger-container .burger-options .fourth-option .fries .paragraph,
+.menu .burger-container .burger-options .fourth-option .big-special .paragraph {
+  color: #363636;
+  font-weight: 700;
+}
+.menu .burger-container .burger-options .first-option .cheese-burger span,
+.menu .burger-container .burger-options .first-option .picanha-burger span,
+.menu .burger-container .burger-options .first-option .fries span,
+.menu .burger-container .burger-options .first-option .big-special span,
+.menu .burger-container .burger-options .second-option .cheese-burger span,
+.menu .burger-container .burger-options .second-option .picanha-burger span,
+.menu .burger-container .burger-options .second-option .fries span,
+.menu .burger-container .burger-options .second-option .big-special span,
+.menu .burger-container .burger-options .third-option .cheese-burger span,
+.menu .burger-container .burger-options .third-option .picanha-burger span,
+.menu .burger-container .burger-options .third-option .fries span,
+.menu .burger-container .burger-options .third-option .big-special span,
+.menu .burger-container .burger-options .fourth-option .cheese-burger span,
+.menu .burger-container .burger-options .fourth-option .picanha-burger span,
+.menu .burger-container .burger-options .fourth-option .fries span,
+.menu .burger-container .burger-options .fourth-option .big-special span {
+  color: #fcbf49;
+  font-weight: 700;
+}
+.menu .burger-container .burger-options .first-option .burger-description,
+.menu .burger-container .burger-options .second-option .burger-description,
+.menu .burger-container .burger-options .third-option .burger-description,
+.menu .burger-container .burger-options .fourth-option .burger-description {
+  color: #363636;
+}
+.menu .burger-container .burger-options .btn-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .burger-container .burger-options .btn-menu button {
+  height: 6dvh;
+  width: 30dvh;
+  border: none;
+  border-radius: 5dvh;
+}
+.menu .burger-container .burger-options .btn-menu .whatsapp-btn {
+  background-color: #F0C002;
+  color: #FFF;
+  transition: background-color 0.8s;
+}
+.menu .burger-container .burger-options .btn-menu .whatsapp-btn:hover {
+  background-color: #fcbf49;
+}
+.menu .burger-container .burger-options .btn-menu .menu-btn {
+  background-color: #444444;
+  color: #FFF;
+  border-radius: 5dvh;
+  transition: opacity 0.8s;
+}
+.menu .burger-container .burger-options .btn-menu .menu-btn:hover {
+  opacity: 70%;
+}
+.menu .burger-container .burger-img img {
+  height: 120dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu div {
+  flex: 1;
+}
+
+.drinks {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15dvh;
+  max-width: 1240px;
+  margin: auto;
+  padding-bottom: 10dvh;
+}
+.drinks h2 {
+  color: #fcbf49;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 5dvh;
+}
+.drinks .menu-paragraph {
+  color: #fcbf49;
+  text-align: center;
+  margin-bottom: 5dvh;
+}
+.drinks .drinks-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  border-radius: 2dvh;
+  overflow: hidden;
+}
+.drinks .drinks-container .drinks-options {
+  padding: 4dvh 4dvh;
+}
+.drinks .drinks-container .drinks-options .first-option,
+.drinks .drinks-container .drinks-options .second-option,
+.drinks .drinks-container .drinks-options .third-option,
+.drinks .drinks-container .drinks-options .fourth-option {
+  border-bottom: 1px dashed #444444;
+  margin: 4dvh 4dvh;
+}
+.drinks .drinks-container .drinks-options .first-option .chopps,
+.drinks .drinks-container .drinks-options .first-option .beers,
+.drinks .drinks-container .drinks-options .first-option .soda,
+.drinks .drinks-container .drinks-options .first-option .juices,
+.drinks .drinks-container .drinks-options .second-option .chopps,
+.drinks .drinks-container .drinks-options .second-option .beers,
+.drinks .drinks-container .drinks-options .second-option .soda,
+.drinks .drinks-container .drinks-options .second-option .juices,
+.drinks .drinks-container .drinks-options .third-option .chopps,
+.drinks .drinks-container .drinks-options .third-option .beers,
+.drinks .drinks-container .drinks-options .third-option .soda,
+.drinks .drinks-container .drinks-options .third-option .juices,
+.drinks .drinks-container .drinks-options .fourth-option .chopps,
+.drinks .drinks-container .drinks-options .fourth-option .beers,
+.drinks .drinks-container .drinks-options .fourth-option .soda,
+.drinks .drinks-container .drinks-options .fourth-option .juices {
+  display: flex;
+  justify-content: space-between;
+}
+.drinks .drinks-container .drinks-options .first-option .chopps .paragraph,
+.drinks .drinks-container .drinks-options .first-option .beers .paragraph,
+.drinks .drinks-container .drinks-options .first-option .soda .paragraph,
+.drinks .drinks-container .drinks-options .first-option .juices .paragraph,
+.drinks .drinks-container .drinks-options .second-option .chopps .paragraph,
+.drinks .drinks-container .drinks-options .second-option .beers .paragraph,
+.drinks .drinks-container .drinks-options .second-option .soda .paragraph,
+.drinks .drinks-container .drinks-options .second-option .juices .paragraph,
+.drinks .drinks-container .drinks-options .third-option .chopps .paragraph,
+.drinks .drinks-container .drinks-options .third-option .beers .paragraph,
+.drinks .drinks-container .drinks-options .third-option .soda .paragraph,
+.drinks .drinks-container .drinks-options .third-option .juices .paragraph,
+.drinks .drinks-container .drinks-options .fourth-option .chopps .paragraph,
+.drinks .drinks-container .drinks-options .fourth-option .beers .paragraph,
+.drinks .drinks-container .drinks-options .fourth-option .soda .paragraph,
+.drinks .drinks-container .drinks-options .fourth-option .juices .paragraph {
+  color: #363636;
+  font-weight: 700;
+}
+.drinks .drinks-container .drinks-options .first-option .chopps span,
+.drinks .drinks-container .drinks-options .first-option .beers span,
+.drinks .drinks-container .drinks-options .first-option .soda span,
+.drinks .drinks-container .drinks-options .first-option .juices span,
+.drinks .drinks-container .drinks-options .second-option .chopps span,
+.drinks .drinks-container .drinks-options .second-option .beers span,
+.drinks .drinks-container .drinks-options .second-option .soda span,
+.drinks .drinks-container .drinks-options .second-option .juices span,
+.drinks .drinks-container .drinks-options .third-option .chopps span,
+.drinks .drinks-container .drinks-options .third-option .beers span,
+.drinks .drinks-container .drinks-options .third-option .soda span,
+.drinks .drinks-container .drinks-options .third-option .juices span,
+.drinks .drinks-container .drinks-options .fourth-option .chopps span,
+.drinks .drinks-container .drinks-options .fourth-option .beers span,
+.drinks .drinks-container .drinks-options .fourth-option .soda span,
+.drinks .drinks-container .drinks-options .fourth-option .juices span {
+  color: #fcbf49;
+  font-weight: 700;
+}
+.drinks .drinks-container .drinks-options .first-option .description,
+.drinks .drinks-container .drinks-options .second-option .description,
+.drinks .drinks-container .drinks-options .third-option .description,
+.drinks .drinks-container .drinks-options .fourth-option .description {
+  color: #363636;
+}
+.drinks .drinks-container .drinks-options .btn-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.drinks .drinks-container .drinks-options .btn-menu button {
+  height: 6dvh;
+  width: 30dvh;
+  border: none;
+  border-radius: 5dvh;
+}
+.drinks .drinks-container .drinks-options .btn-menu .whatsapp-btn {
+  background-color: #F0C002;
+  color: #FFF;
+  transition: background-color 0.8s;
+}
+.drinks .drinks-container .drinks-options .btn-menu .whatsapp-btn:hover {
+  background-color: #fcbf49;
+}
+.drinks .drinks-container .drinks-options .btn-menu .menu-btn {
+  background-color: #444444;
+  color: #FFF;
+  border-radius: 5dvh;
+  transition: opacity 0.8s;
+}
+.drinks .drinks-container .drinks-options .btn-menu .menu-btn:hover {
+  opacity: 70%;
+}
+.drinks .drinks-container .drinks-img img {
+  height: 120dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.drinks div {
+  flex: 1;
+}
+
+.location {
+  padding-top: 5dvh;
+  text-align: center;
+  max-width: 1240px;
+  margin: auto;
+}
+.location h2 {
+  font-size: 2.6rem;
+  color: #fcbf49;
+  margin-bottom: 5dvh;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5dvh;
+  margin-bottom: 5dvh;
+  max-width: 1240px;
+  margin: auto;
+}
+.restaurant h2 {
+  color: #fcbf49;
+  font-size: 2.6rem;
+  margin-bottom: 5dvh;
+  margin-top: 5dvh;
+}
+.restaurant .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4dvh;
+  max-width: 1240px;
+  margin: auto;
+}
+.restaurant .card-grid img {
+  filter: brightness(40%);
+  transition: transform 0.8s;
+}
+.restaurant .card-grid img:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=main.css.map */

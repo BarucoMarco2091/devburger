@@ -3,6 +3,7 @@
 @import '../styles/main.scss';
 @import '../styles/responsivity.scss';
 @import '../styles/variables.scss';
+@import '../styles/whatsapp-btn.scss';
 
 * {
     margin: 0;
@@ -21,6 +22,9 @@ body {
     height: 100dvh;
     position: relative;
     overflow-x: hidden;
+}
+
+main {
     background-color: $bg-color;
 }
 

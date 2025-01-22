@@ -1,1 +1,91 @@
 @import '../styles/variables.scss';
+
+@keyframes scale {
+    from {
+        transform: scale(1) translateY(0px);
+    }
+
+    to {
+        transform: scale(1.1) translateY(-8px);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: $primaryText;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: auto;
+    padding: 3dvh 3dvh;
+
+    .nav-list {
+        display: flex;
+        gap: 3dvh;
+        list-style: none;
+
+        .nav-link {
+            color: $text;
+            font-weight: 700;
+            transition: color .8s, border-top .8s;
+        }
+
+        .nav-link:hover {
+            color: $primaryGreen;
+            border-top: solid 1px $primaryGreen;
+        }
+    }
+
+    .nav-icons i {
+        gap: 3dvh;
+        transition: color .8s;
+    }
+
+    .nav-icons i:hover {
+        color: $primaryGreen;
+        animation: scale 1s infinite linear;
+    }
+}
+
+#carouselExampleCaptions {
+    position: relative;
+
+    .carousel-caption {
+        position: absolute;
+        bottom: 30%;
+    }
+
+    .carousel-btn {
+        width: 30dvh;
+        height: 6dvh;
+        border: none;
+        border-radius: 5dvh;
+        color: $white;
+        background-color: $secondaryBlack;
+        transition: background-color .8s;
+        animation: pulse 1s infinite linear;
+    }
+
+    .carousel-btn:hover {
+        background-color: $primaryText;
+    }
+
+    i {
+        margin-right: 2dvh;
+    }
+}
