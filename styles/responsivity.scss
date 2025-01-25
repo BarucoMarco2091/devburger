@@ -1,1 +1,7 @@
 @import '../styles/variables.scss';
+
+@media screen and (min-width: 768px) {
+    .carrinho {
+        min-width: 600px !important;
+    }
+}

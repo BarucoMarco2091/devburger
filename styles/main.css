@@ -332,4 +332,117 @@
 }
 .restaurant .card-grid img:hover {
   transform: scale(1.1);
+}
+
+.cardapio {
+  padding-top: 5dvh;
+  padding-bottom: 5dvh;
+  text-align: center;
+}
+.cardapio h2 {
+  color: #fcbf49;
+  margin-bottom: 5dvh;
+}
+.cardapio .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1240px;
+  margin: auto;
+  gap: 2dvh;
+}
+.cardapio .grid .card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 2dvh;
+  overflow: hidden;
+}
+.cardapio .grid .card img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(60%);
+}
+.cardapio .grid .card .card-text {
+  margin-left: 2dvh;
+  text-align: center;
+}
+.cardapio .grid .card .card-text .card-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-modal-button {
+  display: flex;
+}
+.cart-modal-button button {
+  width: 100%;
+  background-color: rgb(201, 62, 62);
+  color: #FFF;
+  transition: opacity 0.8s;
+}
+.cart-modal-button button:hover {
+  opacity: 80%;
+}
+
+.fullscreen {
+  position: fixed;
+  z-index: 55;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.fullscreen .carrinho {
+  background-color: #ECECEC;
+  min-width: 90%;
+  border-radius: 2dvh;
+  text-align: center;
+  font-weight: bold;
+  margin: 2dvh 2dvh;
+}
+.fullscreen .carrinho h2 {
+  margin-top: 2dvh;
+}
+.fullscreen .carrinho #cart-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fullscreen .carrinho p {
+  font-weight: bold;
+}
+.fullscreen .carrinho #address {
+  width: 90%;
+  padding: 2dvh 1dvh;
+  margin: 2dvh 1dvh;
+  border: none;
+  border-radius: 1dvh;
+}
+.fullscreen .carrinho #address-warn {
+  color: rgb(201, 62, 62);
+  font-weight: 500;
+  display: none;
+}
+.fullscreen .carrinho div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2dvh;
+  gap: 3dvh;
+}
+.fullscreen .carrinho div #close-modal-btn {
+  border: none;
+}
+.fullscreen .carrinho div #checkout-btn {
+  background-color: #61CE70;
+  color: #FFF;
+  padding: 2dvh 2dvh;
+  border-radius: 2dvh;
+  border: none;
 }/*# sourceMappingURL=main.css.map */

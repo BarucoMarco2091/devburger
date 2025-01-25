@@ -56,81 +56,81 @@
         overflow: hidden;
 
         .burger-options {
-        padding: 4dvh 4dvh;
+            padding: 4dvh 4dvh;
 
-        .first-option,
-        .second-option,
-        .third-option,
-        .fourth-option {
-            border-bottom: 1px dashed $secondaryBlack;
-            margin: 4dvh 4dvh;
+            .first-option,
+            .second-option,
+            .third-option,
+            .fourth-option {
+                border-bottom: 1px dashed $secondaryBlack;
+                margin: 4dvh 4dvh;
 
-            .cheese-burger,
-            .picanha-burger,
-            .fries,
-            .big-special {
+                .cheese-burger,
+                .picanha-burger,
+                .fries,
+                .big-special {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .paragraph {
+                        color: $text;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        color: $primaryText;
+                        font-weight: 700;
+                    }
+                }
+
+                .burger-description {
+                    color: $text;
+                }
+            }
+
+            .btn-menu {
                 display: flex;
                 justify-content: space-between;
 
-                .paragraph {
-                    color: $text;
-                    font-weight: 700;
+                button {
+                    height: 6dvh;
+                    width: 30dvh;
+                    border: none;
+                    border-radius: 5dvh;
                 }
 
-                span {
-                    color: $primaryText;
-                    font-weight: 700;
+                .whatsapp-btn {
+                    background-color: $yellow;
+                    color: $white;
+                    transition: background-color .8s;
                 }
-            }
 
-            .burger-description {
-                color: $text;
+                .whatsapp-btn:hover {
+                    background-color: $primaryText;
+                }
+
+                .menu-btn {
+                    background-color: $secondaryBlack;
+                    color: $white;
+                    border-radius: 5dvh;
+                    transition: opacity .8s;
+                }
+
+                .menu-btn:hover {
+                    opacity: 70%;
+                }
             }
         }
 
-        .btn-menu {
-            display: flex;
-            justify-content: space-between;
-
-            button {
-                height: 6dvh;
-                width: 30dvh;
-                border: none;
-                border-radius: 5dvh;
-            }
-
-            .whatsapp-btn {
-                background-color: $yellow;
-                color: $white;
-                transition: background-color .8s;
-            }
-
-            .whatsapp-btn:hover {
-                background-color: $primaryText;
-            }
-
-            .menu-btn {
-                background-color: $secondaryBlack;
-                color: $white;
-                border-radius: 5dvh;
-                transition: opacity .8s;
-            }
-
-            .menu-btn:hover {
-                opacity: 70%;
-            }
+        .burger-img img {
+            height: 120dvh;
+            object-fit: cover;
         }
     }
 
-    .burger-img img {
-        height: 120dvh;
-        object-fit: cover;
+    div {
+        flex: 1;
     }
-}
-
-div {
-    flex: 1;
-}
 }
 
 .drinks {
@@ -285,3 +285,132 @@ div {
         }
     }
 }
+
+.cardapio {
+    padding-top: 5dvh;
+    padding-bottom: 5dvh;
+    text-align: center;
+
+    h2 {
+        color: $primaryText;
+        margin-bottom: 5dvh;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1240px;
+        margin: auto;
+        gap: 2dvh;
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            border-radius: 2dvh;
+            overflow: hidden;
+
+            img {
+                height: fit-content;
+                width: 60%;
+                object-fit: cover;
+                filter: brightness(60%);
+            }
+
+            .card-text {
+                margin-left: 2dvh;
+                text-align: center;
+
+                .card-price {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.cart-modal-button {
+    display: flex;
+
+    button {
+        width: 100%;
+        background-color: $red;
+        color: $white;
+        transition: opacity .8s;
+    }
+
+    button:hover {
+        opacity: 80%;
+    }
+}
+
+.fullscreen {
+    position: fixed;
+    z-index: 55;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    background-color: rgb( 0 0 0 / 0.4);
+
+    .carrinho {
+        background-color: $primaryWhite;
+        min-width: 90%;
+        border-radius: 2dvh;
+        text-align: center;
+        font-weight: bold;
+        margin: 2dvh 2dvh;
+
+        h2 {
+            margin-top: 2dvh;
+        }
+
+        #cart-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        #address {
+            width: 90%;
+            padding: 2dvh 1dvh;
+            margin: 2dvh 1dvh;
+            border: none;
+            border-radius: 1dvh;
+        }
+
+        #address-warn {
+            color: rgb(201, 62, 62);
+            font-weight: 500;
+            display: none;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2dvh;
+            gap: 3dvh;
+
+            #close-modal-btn {
+                border: none;
+            }
+
+            #checkout-btn {
+                background-color: $green;
+                color: $white;
+                padding: 2dvh 2dvh;
+                border-radius: 2dvh;
+                border: none;
+            }
+        }
+    }
+}
+
