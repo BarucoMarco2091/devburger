@@ -66,7 +66,6 @@ function addToCart(name, price) {
     updateCartModal();
 };
 
-
 // Atualiza o carrinho
 
 function updateCartModal() {
@@ -75,7 +74,7 @@ function updateCartModal() {
     cart.forEach(item => {
         const cartItemElement = document.createElement("div");
         cartItemElement.innerHTML =
-        `
+            `
         <div>
             <div>
                 <p>${item.name}</p>
@@ -104,8 +103,8 @@ function updateCartModal() {
 
 // Função para remover item do carrinho
 
-cartItemsContainer.addEventListener("click", function(event) {
-    if(event.target.classList.contains("remove-from-cart-btn")) {
+cartItemsContainer.addEventListener("click", function (event) {
+    if (event.target.classList.contains("remove-from-cart-btn")) {
         const name = event.target.getAttribute("data-name");
 
         removeItemCart(name);
@@ -115,10 +114,10 @@ cartItemsContainer.addEventListener("click", function(event) {
 function removeItemCart(name) {
     const index = cart.findIndex(item => item.name === name);
 
-    if(index !== -1) {
+    if (index !== -1) {
         const item = cart[index];
 
-        if(item.quantity > 1) {
+        if (item.quantity > 1) {
             item.quantity -= 1;
             updateCartModal();
             return;
@@ -127,3 +126,35 @@ function removeItemCart(name) {
         updateCartModal();
     };
 };
+
+// Pegar endereço
+
+addressInput.addEventListener("input", function (event) {
+    let inputValue = event.target.value;
+    if(inputValue !== "") {
+        addressWarn.style.display = "none"; // esconde o aviso
+    };
+});
+
+// Finalizar pedido
+
+checkoutBtn.addEventListener("click", function () {
+    if (cart.length === 0) return;
+    if (addressInput.value === "") {
+        addressWarn.style.display = "block"; // Mostra o aviso
+    };
+
+    // Enviar pedido para api whats
+    const cartItems = cart.map((item) => {
+        return (
+             `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price}  |`
+        );
+    }).join("");
+
+    const message = encodeURIComponent(cartItems);
+    const phone = "5511996221043";
+    window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank");
+    cart = [];
+    updateCartModal();
+});
+

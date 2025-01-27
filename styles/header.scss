@@ -14,6 +14,7 @@
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(1.2);
     }
@@ -87,5 +88,20 @@ nav {
 
     i {
         margin-right: 2dvh;
+    }
+
+    #hour {
+        display: flex;
+        text-align: center;
+        background-color: $green;
+        position: absolute;
+        bottom: -30%;
+        left: 40%;
+        padding: 1dvh 1dvh;
+        border-radius: 1dvh;
+
+        span {
+            text-align: center;
+        }
     }
 }

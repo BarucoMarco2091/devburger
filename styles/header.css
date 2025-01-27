@@ -76,4 +76,17 @@ nav .nav-icons i:hover {
 }
 #carouselExampleCaptions i {
   margin-right: 2dvh;
+}
+#carouselExampleCaptions #hour {
+  display: flex;
+  text-align: center;
+  background-color: #61CE70;
+  position: absolute;
+  bottom: -30%;
+  left: 40%;
+  padding: 1dvh 1dvh;
+  border-radius: 1dvh;
+}
+#carouselExampleCaptions #hour span {
+  text-align: center;
 }/*# sourceMappingURL=header.css.map */
