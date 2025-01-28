@@ -60,3 +60,9 @@ img {
 svg {
     width: 100%;
 }
+
+@media (width <= 768px) {
+    h1,h2 {
+        font-size: 2rem !important;
+    }
+}

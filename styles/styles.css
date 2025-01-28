@@ -98,6 +98,9 @@ nav .nav-icons i:hover {
   position: absolute;
   bottom: 30%;
 }
+#carouselExampleCaptions .carousel-caption p {
+  line-height: 1.5rem;
+}
 #carouselExampleCaptions .carousel-btn {
   width: 30dvh;
   height: 6dvh;
@@ -168,6 +171,7 @@ nav .nav-icons i:hover {
   color: #fcbf49;
   text-align: center;
   margin-bottom: 5dvh;
+  line-height: 2rem;
 }
 .menu .burger-container {
   display: flex;
@@ -248,6 +252,7 @@ nav .nav-icons i:hover {
 .menu .burger-container .burger-options .third-option .burger-description,
 .menu .burger-container .burger-options .fourth-option .burger-description {
   color: #363636;
+  line-height: 2rem;
 }
 .menu .burger-container .burger-options .btn-menu {
   display: flex;
@@ -383,6 +388,7 @@ nav .nav-icons i:hover {
 .drinks .drinks-container .drinks-options .third-option .description,
 .drinks .drinks-container .drinks-options .fourth-option .description {
   color: #363636;
+  line-height: 2rem;
 }
 .drinks .drinks-container .drinks-options .btn-menu {
   display: flex;
@@ -470,6 +476,7 @@ nav .nav-icons i:hover {
 .cardapio h2 {
   color: #fcbf49;
   margin-bottom: 5dvh;
+  font-size: 2.6rem;
 }
 .cardapio .grid {
   display: grid;
@@ -490,7 +497,11 @@ nav .nav-icons i:hover {
   width: 60%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(60%);
+  filter: brightness(50%);
+  transition: transform 0.8s;
+}
+.cardapio .grid .card img:hover {
+  transform: rotate(5deg);
 }
 .cardapio .grid .card .card-text {
   margin-left: 2dvh;
@@ -520,10 +531,11 @@ nav .nav-icons i:hover {
   border: none;
   border-radius: 1dvh;
   cursor: pointer;
-  transition: opacity 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
 }
 .cardapio .grid .card .card-text .card-price .add-to-cart-btn:hover {
   opacity: 40%;
+  transform: scale(1.1);
 }
 
 .cart-modal-button {
@@ -599,13 +611,17 @@ nav .nav-icons i:hover {
   border: none;
 }
 
-.remove-from-cart-btn {
-  opacity: 40%;
-}
-
 @media screen and (min-width: 768px) {
   .carrinho {
     min-width: 600px !important;
+  }
+}
+@media (width <= 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 1dvh 1dvh;
+    text-align: center;
   }
 }
 * {
@@ -662,4 +678,10 @@ img {
 
 svg {
   width: 100%;
+}
+
+@media (width <= 768px) {
+  h1, h2 {
+    font-size: 2rem !important;
+  }
 }/*# sourceMappingURL=styles.css.map */

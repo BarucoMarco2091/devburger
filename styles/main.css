@@ -345,6 +345,7 @@
 .cardapio h2 {
   color: #fcbf49;
   margin-bottom: 5dvh;
+  font-size: 2.6rem;
 }
 .cardapio .grid {
   display: grid;
@@ -365,7 +366,7 @@
   width: 60%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(60%);
+  filter: brightness(50%);
   transition: transform 0.8s;
 }
 .cardapio .grid .card img:hover {
@@ -399,10 +400,11 @@
   border: none;
   border-radius: 1dvh;
   cursor: pointer;
-  transition: opacity 0.8s;
+  transition: opacity 0.8s, transform 0.8s;
 }
 .cardapio .grid .card .card-text .card-price .add-to-cart-btn:hover {
   opacity: 40%;
+  transform: scale(1.1);
 }
 
 .cart-modal-button {

@@ -4,4 +4,38 @@
   .carrinho {
     min-width: 600px !important;
   }
+}
+@media (width <= 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 1dvh 1dvh;
+    text-align: center;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding: 2dvh 2dvh;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (width <= 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding: 1dvh 1dvh;
+  }
+  .grid .card {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .grid .card img {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=responsivity.css.map */
