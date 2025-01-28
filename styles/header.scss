@@ -54,7 +54,7 @@ nav {
 
     .nav-icons i {
         gap: 3dvh;
-        transition: color .8s;
+        transition: color .8s, animation .8s;
     }
 
     .nav-icons i:hover {
@@ -69,6 +69,10 @@ nav {
     .carousel-caption {
         position: absolute;
         bottom: 30%;
+
+        p {
+            line-height: 1.5rem;
+        }
     }
 
     .carousel-btn {

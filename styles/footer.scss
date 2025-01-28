@@ -1,5 +1,16 @@
 @import '../styles/variables.scss';
 
+
+@keyframes scale {
+    from {
+        transform: scale(1) translateY(0px);
+    }
+
+    to {
+        transform: scale(1.1) translateY(-8px);
+    }
+}
+
 footer {
     background-color: $primaryText;
     
@@ -12,11 +23,12 @@ footer {
 
         i {
             gap: 2dvh;
-            transition: color .8s;
+            transition: color .8s, animation .8s;
         }
 
         i:hover {
             color: $primaryGreen;
+            animation: scale 1s infinite linear;
         }
     }
 }

@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav data-aos="fade-up">
             <div class="logo">
                 <i class="fa-solid fa-burger">DevBurger</i>
             </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/bg (2).png" class="d-block w-100" alt="...">
+                    <img src="assets/bg (2).png" class="d-block w-100" alt="snack-bar">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>OS BURGERS QUE VOCÊ AMA</h2>
                         <p>Aqui na DevBurger, qualidade é palavra de ordem. Utilizando apenas os melhores produtos
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bg (2).png" class="d-block w-100" alt="...">
+                    <img src="assets/bg (2).png" class="d-block w-100" alt="snack-bar">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>OS BURGERS QUE VOCÊ AMA</h2>
                         <p>Aqui na DevBurger, qualidade é palavra de ordem. Utilizando apenas os melhores produtos
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/bg (2).png" class="d-block w-100" alt="...">
+                    <img src="assets/bg (2).png" class="d-block w-100" alt="snack-bar">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>OS BURGERS QUE VOCÊ AMA</h2>
                         <p>Aqui na DevBurger, qualidade é palavra de ordem. Utilizando apenas os melhores produtos
@@ -121,16 +121,16 @@
         </div>
     </header>
     <main>
-        <section class="cardapio">
+        <section class="cardapio" data-aos="fade-down-right">
             <h2>Cardápio</h2>
-            <section class="grid" id="menu">
+            <section class="grid" id="menu" data-aos="fade-down">
                 <div class="card">
                     <img src="assets/artesanal.png" alt="hamburger artesanal" loading="lazy">
                     <div class="card-text">
-                        <p>Hamburger Artesanal</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Hamburger Artesanal</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
                         <div class="card-price">
-                            <p>R$ 35,00</p>
+                            <p class="price-product">R$ 35,00</p>
                             <button class="add-to-cart-btn" data-name="Hamburger Artesanal" data-price="35.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
@@ -139,149 +139,149 @@
                 <div class="card">
                     <img src="assets/caesarsalad.png" alt="caesar salad" loading="lazy">
                     <div class="card-text">
-                        <p>Caesar Salad</p>
-                        <p>Esse clássico, que combina croutons crocantes, alface fresquinha e molho cremoso, ganha o
+                        <p class="card-text-title">Caesar Salad</p>
+                        <p class="card-text-description">Esse clássico, que combina croutons crocantes, alface fresquinha e molho cremoso, ganha o
                             reforço do frango desfiado.</p>
                         <div class="card-price">
-                            <p>R$ 15,00</p>
+                            <p class="price-product">R$ 15,00</p>
                             <button class="add-to-cart-btn" data-name="Caesar Salad" data-price="15.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/cheddarburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/cheddarburger.png" alt="cheddar burger" loading="lazy">
                     <div class="card-text">
-                        <p>Cheddar burger</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Cheddar burger</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
                         <div class="card-price">
-                            <p>R$ 25,00</p>
+                            <p class="price-product">R$ 25,00</p>
                             <button class="add-to-cart-btn" data-name="Cheddar burger" data-price="25.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/chickenburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/chickenburger.png" alt="chicken burger" loading="lazy">
                     <div class="card-text">
-                        <p>Chicken Burger</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Chicken Burger</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
                         <div class="card-price">
-                            <p>R$ 45,00</p>
+                            <p class="price-product">R$ 45,00</p>
                             <button class="add-to-cart-btn" data-name="Chicken Burger" data-price="45.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/doubleburger.jpg" alt="caesar salad" loading="lazy">
+                    <img src="assets/doubleburger.jpg" alt="double burger" loading="lazy">
                     <div class="card-text">
-                        <p>Double Burger</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Double Burger</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
                         <div class="card-price">
-                            <p>R$ 42,00</p>
+                            <p class="price-product">R$ 42,00</p>
                             <button class="add-to-cart-btn" data-name="Double Burger" data-price="42.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/fries.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/fries.png" alt="fries" loading="lazy">
                     <div class="card-text">
-                        <p>French Fries</p>
-                        <p>Nossas fritas com uma cobertura irresistível de mix de queijos e bacon. O toque final fica
+                        <p class="card-text-title">French Fries</p>
+                        <p class="card-text-description">Nossas fritas com uma cobertura irresistível de mix de queijos e bacon. O toque final fica
                             por conta do molho Ranch.</p>
                         <div class="card-price">
-                            <p>R$ 42,00</p>
+                            <p class="price-product">R$ 42,00</p>
                             <button class="add-to-cart-btn" data-name="French Fries" data-price="42.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/onionrings.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/onionrings.png" alt="onion rings" loading="lazy">
                     <div class="card-text">
-                        <p>Onion Rings</p>
-                        <p>Feitos com cebolas selecionadas, eles são uma combinação de crocância e sabor em cada pedaço.
+                        <p class="card-text-title">Onion Rings</p>
+                        <p class="card-text-description">Feitos com cebolas selecionadas, eles são uma combinação de crocância e sabor em cada pedaço.
                         </p>
                         <div class="card-price">
-                            <p>R$ 25,00</p>
+                            <p class="price-product">R$ 25,00</p>
                             <button class="add-to-cart-btn" data-name="Onion Rings" data-price="25.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/picanhaburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/picanhaburger.png" alt="picanha burger" loading="lazy">
                     <div class="card-text">
-                        <p>Picanha Burger</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Picanha Burger</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>.
                         <div class="card-price">
-                            <p>R$ 55,00</p>
+                            <p class="price-product">R$ 55,00</p>
                             <button class="add-to-cart-btn" data-name="Picanha Burger" data-price="55.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/ribburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/ribburger.png" alt="rib burger" loading="lazy">
                     <div class="card-text">
-                        <p>Rib Burger</p>
-                        <p>Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-title">Rib Burger</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
                         <div class="card-price">
-                            <p>R$ 65,00</p>
+                            <p class="price-product">R$ 65,00</p>
                             <button class="add-to-cart-btn" data-name="Rib Burger" data-price="65.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/sandwich.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/sandwich.png" alt="sandwich" loading="lazy">
                     <div class="card-text">
-                        <p>Sanduíche natural</p>
-                        <p>
+                        <p class="card-text-title">Sanduíche natural</p>
+                        <p class="card-text-description">
                             Pão integral, sem glúten, salada e requeijão light</p>
                         <div class="card-price">
-                            <p>R$ 15,00</p>
+                            <p class="price-product">R$ 15,00</p>
                             <button class="add-to-cart-btn" data-name="Sanduíche natural" data-price="15.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/supremeburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/supremeburger.png" alt="supreme burger" loading="lazy">
                     <div class="card-text">
-                        <p>Supreme Burger</p>
-                        <p>
+                        <p class="card-text-title">Supreme Burger</p>
+                        <p class="card-text-description">
                             Pão integral, sem glúten, salada e requeijão light</p>
                         <div class="card-price">
-                            <p>R$ 39,00</p>
+                            <p class="price-product">R$ 39,00</p>
                             <button class="add-to-cart-btn" data-name="Supreme Burger" data-price="39.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/tripleburger.jpg" alt="caesar salad" loading="lazy">
+                    <img src="assets/tripleburger.jpg" alt="triple burger" loading="lazy">
                     <div class="card-text">
-                        <p>Triple Burger</p>
-                        <p>
+                        <p class="card-text-title">Triple Burger</p>
+                        <p class="card-text-description">
                             Pão integral, sem glúten, salada e requeijão light</p>
                         <div class="card-price">
-                            <p>R$ 43,00</p>
+                            <p class="price-product">R$ 43,00</p>
                             <button class="add-to-cart-btn" data-name="Triple Burger" data-price="43.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/triplecheeseburger.png" alt="caesar salad" loading="lazy">
+                    <img src="assets/triplecheeseburger.png" alt="triple cheese burger" loading="lazy">
                     <div class="card-text">
-                        <p>Triple Cheese Burger</p>
-                        <p>
+                        <p class="card-text-title">Triple Cheese Burger</p>
+                        <p class="card-text-description">
                             Pão integral, sem glúten, salada e requeijão light</p>
                         <div class="card-price">
-                            <p>R$ 48,00</p>
+                            <p class="price-product">R$ 48,00</p>
                             <button class="add-to-cart-btn" data-name="Triple Cheese Burger" data-price="48.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
@@ -317,7 +317,7 @@
                 <i class="fa-solid fa-burger">DevBurger</i>
             </div>
             <div class="copy">
-                <p>&copy; Coyright 2025</p>
+                <p>&copy; Copyright 2025</p>
             </div>
             <div class="footer-icons">
                 <i class="fa-brands fa-facebook"></i>

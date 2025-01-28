@@ -40,6 +40,7 @@
   color: #fcbf49;
   text-align: center;
   margin-bottom: 5dvh;
+  line-height: 2rem;
 }
 .menu .burger-container {
   display: flex;
@@ -120,6 +121,7 @@
 .menu .burger-container .burger-options .third-option .burger-description,
 .menu .burger-container .burger-options .fourth-option .burger-description {
   color: #363636;
+  line-height: 2rem;
 }
 .menu .burger-container .burger-options .btn-menu {
   display: flex;
@@ -255,6 +257,7 @@
 .drinks .drinks-container .drinks-options .third-option .description,
 .drinks .drinks-container .drinks-options .fourth-option .description {
   color: #363636;
+  line-height: 2rem;
 }
 .drinks .drinks-container .drinks-options .btn-menu {
   display: flex;
@@ -363,15 +366,43 @@
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(60%);
+  transition: transform 0.8s;
+}
+.cardapio .grid .card img:hover {
+  transform: rotate(5deg);
 }
 .cardapio .grid .card .card-text {
   margin-left: 2dvh;
   text-align: center;
 }
+.cardapio .grid .card .card-text .card-text-title {
+  font-weight: 700;
+  margin-top: 1dvh;
+}
+.cardapio .grid .card .card-text .card-text-description {
+  line-height: 1.5rem;
+  color: #363636;
+}
 .cardapio .grid .card .card-text .card-price {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.cardapio .grid .card .card-text .card-price .price-product {
+  color: rgb(201, 62, 62);
+}
+.cardapio .grid .card .card-text .card-price .add-to-cart-btn {
+  background-color: #282828;
+  color: #FFF;
+  margin-right: 2dvh;
+  width: 10dvh;
+  border: none;
+  border-radius: 1dvh;
+  cursor: pointer;
+  transition: opacity 0.8s;
+}
+.cardapio .grid .card .card-text .card-price .add-to-cart-btn:hover {
+  opacity: 40%;
 }
 
 .cart-modal-button {

@@ -74,8 +74,8 @@ function updateCartModal() {
     cart.forEach(item => {
         const cartItemElement = document.createElement("div");
         cartItemElement.innerHTML =
-            `
-        <div>
+        `
+        <div style="display: flex; justify-content: space-between; max-height: 400px; overflow: auto;">
             <div>
                 <p>${item.name}</p>
                 <p>Qtd: ${item.quantity}</p>
@@ -144,10 +144,11 @@ checkoutBtn.addEventListener("click", function () {
         addressWarn.style.display = "block"; // Mostra o aviso
     };
 
-    // Enviar pedido para api whats
+    // Enviar pedido para api whatsapp
+
     const cartItems = cart.map((item) => {
         return (
-             `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price}  |`
+             `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |`
         );
     }).join("");
 

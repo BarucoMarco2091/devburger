@@ -46,6 +46,7 @@
         color: $primaryText;
         text-align: center;
         margin-bottom: 5dvh;
+        line-height: 2rem;
     }
 
     .burger-container {
@@ -85,6 +86,7 @@
 
                 .burger-description {
                     color: $text;
+                    line-height: 2rem;
                 }
             }
 
@@ -191,6 +193,7 @@
 
                 .description {
                     color: $text;
+                    line-height: 2rem;
                 }
             }
 
@@ -314,16 +317,50 @@
                 width: 60%;
                 object-fit: cover;
                 filter: brightness(60%);
+                transition: transform .8s;
+            }
+
+            img:hover {
+                transform: rotate(5deg);
             }
 
             .card-text {
                 margin-left: 2dvh;
                 text-align: center;
 
+                .card-text-title {
+                    font-weight: 700;
+                    margin-top: 1dvh;
+                }
+
+                .card-text-description {
+                    line-height: 1.5rem;
+                    color: $text;
+                }
+
                 .card-price {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+
+                    .price-product {
+                        color: $red;
+                    }
+
+                    .add-to-cart-btn {
+                        background-color: $primaryBlack;
+                        color: $white;
+                        margin-right: 2dvh;
+                        width: 10dvh;
+                        border: none;
+                        border-radius: 1dvh;
+                        cursor: pointer;
+                        transition: opacity .8s;
+                    }
+
+                    .add-to-cart-btn:hover {
+                        opacity: 40%;
+                    }
                 }
             }
         }
@@ -413,4 +450,3 @@
         }
     }
 }
-
