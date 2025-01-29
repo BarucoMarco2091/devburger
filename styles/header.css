@@ -53,6 +53,43 @@ nav .nav-icons i:hover {
   color: #23A455;
   animation: scale 1s infinite linear;
 }
+nav #mobile_btn {
+  display: none;
+  background-color: transparent;
+  color: #FFF;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#mobile_menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  padding: 1rem;
+  z-index: 33;
+}
+#mobile_menu.active {
+  display: flex;
+}
+#mobile_menu #mobile_nav_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  text-align: center;
+}
+#mobile_menu .nav_item {
+  font-size: 1rem;
+}
+#mobile_menu .nav_item a {
+  text-decoration: none;
+  color: #363636;
+}
 
 #carouselExampleCaptions {
   position: relative;

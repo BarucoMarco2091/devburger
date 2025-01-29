@@ -1,5 +1,13 @@
 AOS.init();
 
+
+$(document).ready(function () {
+    $('#mobile_btn').on('click', function() {
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-bars fa-x');
+    });
+});
+
 const menu = document.getElementById("menu");
 const cartBtn = document.getElementById("cart-btn");
 const cartModal = document.getElementById("cart-modal");
@@ -75,7 +83,7 @@ function updateCartModal() {
         const cartItemElement = document.createElement("div");
         cartItemElement.innerHTML =
         `
-        <div style="display: flex; justify-content: space-between; max-height: 400px; overflow: auto;">
+        <div style="display: flex; justify-content: space-between; max-height: 400px; overflow-y: auto;">
             <div>
                 <p>${item.name}</p>
                 <p>Qtd: ${item.quantity}</p>

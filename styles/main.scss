@@ -372,14 +372,14 @@
 .cart-modal-button {
     display: flex;
 
-    button {
-        width: 100%;
+    #cart-btn {
+        max-width: 100%;
         background-color: $red;
         color: $white;
         transition: opacity .8s;
     }
 
-    button:hover {
+    #cart-btn:hover {
         opacity: 80%;
     }
 }

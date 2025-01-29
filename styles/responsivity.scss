@@ -1,14 +1,52 @@
 @import '../styles/variables.scss';
 
+// navbar
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex !important;
+        padding: 1dvh 1dvh !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile_btn {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .nav-list {
+        display: none !important;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .carrinho {
         min-width: 600px !important;
     }
 }
 
+// carousel 
+
+@media (width <=768px) {
+    #carouselExampleCaptions {
+        position: relative;
+
+        .carousel-caption {
+            position: absolute;
+
+            h2,
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
 // devburger.html
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .about {
         display: flex;
         flex-direction: column;
@@ -31,7 +69,7 @@
 
 // cardápio.html
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr !important;
@@ -46,5 +84,62 @@
                 object-fit: cover;
             }
         }
+    }
+}
+
+@media (width <=768px) {
+    .menu {
+        padding: 1dvh 1dvh;
+    }
+
+    .drinks {
+        padding: 1dvh 1dvh;
+    }
+
+    .burger-container,
+    .drinks-container {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .drinks img {
+        width: 100% !important;
+        max-height: max-content;
+    }
+
+    .burger-img img {
+        width: 100% !important;
+        max-height: max-content;
+    }
+
+    button {
+        max-width: max-content;
+        padding: 1dvh 1dvh;
+    }
+
+    .whatsapp-btn {
+        margin-right: 2dvh;
+    }
+}
+
+@media (width <=768px) {
+    .location {
+        padding: 1dvh 1dvh;
+    }
+}
+
+@media (width <=768px) {
+    .cart-modal-button {
+        display: flex !important;
+
+        #cart-btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (width <=768px) {
+    #cart-items {
+        padding: 1dvh 1dvh;
     }
 }

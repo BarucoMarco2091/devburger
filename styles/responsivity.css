@@ -1,8 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex !important;
+    padding: 1dvh 1dvh !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none !important;
+  }
+}
 @media screen and (min-width: 768px) {
   .carrinho {
     min-width: 600px !important;
+  }
+}
+@media (width <= 768px) {
+  #carouselExampleCaptions {
+    position: relative;
+  }
+  #carouselExampleCaptions .carousel-caption {
+    position: absolute;
+  }
+  #carouselExampleCaptions .carousel-caption h2,
+  #carouselExampleCaptions .carousel-caption p {
+    display: none;
   }
 }
 @media (width <= 768px) {
@@ -37,5 +65,54 @@
     width: 100% !important;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media (width <= 768px) {
+  .menu {
+    padding: 1dvh 1dvh;
+  }
+  .drinks {
+    padding: 1dvh 1dvh;
+  }
+  .burger-container,
+  .drinks-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .drinks img {
+    width: 100% !important;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  .burger-img img {
+    width: 100% !important;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  button {
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 1dvh 1dvh;
+  }
+  .whatsapp-btn {
+    margin-right: 2dvh;
+  }
+}
+@media (width <= 768px) {
+  .location {
+    padding: 1dvh 1dvh;
+  }
+}
+@media (width <= 768px) {
+  .cart-modal-button {
+    display: flex !important;
+  }
+  .cart-modal-button #cart-btn {
+    width: 100%;
+  }
+}
+@media (width <= 768px) {
+  #cart-items {
+    padding: 1dvh 1dvh;
   }
 }/*# sourceMappingURL=responsivity.css.map */

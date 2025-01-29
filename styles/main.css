@@ -410,13 +410,13 @@
 .cart-modal-button {
   display: flex;
 }
-.cart-modal-button button {
-  width: 100%;
+.cart-modal-button #cart-btn {
+  max-width: 100%;
   background-color: rgb(201, 62, 62);
   color: #FFF;
   transition: opacity 0.8s;
 }
-.cart-modal-button button:hover {
+.cart-modal-button #cart-btn:hover {
   opacity: 80%;
 }
 

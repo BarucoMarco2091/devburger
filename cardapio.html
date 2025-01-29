@@ -57,7 +57,29 @@
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
             </div>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a href="devburger.html">A DevBurger</a>
+                </li>
+                <li class="nav_item">
+                    <a href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">Gastronomia</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#drinks">Bebidas</a>
+                </li>
+            </ul>
+        </div>
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -101,9 +123,9 @@
                         <p>Aqui na DevBurger, qualidade é palavra de ordem. Utilizando apenas os melhores produtos
                             do<br>mercado em nossas receitas. O blend bovino secreto utiliza três cortes de três raças
                             bovinas<br>diferentes, transformando nossos hambúrgueres em iguarias.</p>
-                            <div id="hour">
-                                <span id="date-span">Seg à Dom - 18:00 às 23:00</span>
-                            </div>
+                        <div id="hour">
+                            <span id="date-span">Seg à Dom - 18:00 às 23:00</span>
+                        </div>
                         <button class="carousel-btn"><i class="fa-brands fa-whatsapp"></i>Peça seu lanche</button>
                     </div>
                 </div>
@@ -128,7 +150,8 @@
                     <img src="assets/artesanal.png" alt="hamburger artesanal" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Hamburger Artesanal</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>
                         <div class="card-price">
                             <p class="price-product">R$ 35,00</p>
                             <button class="add-to-cart-btn" data-name="Hamburger Artesanal" data-price="35.00"><i
@@ -140,11 +163,12 @@
                     <img src="assets/caesarsalad.png" alt="caesar salad" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Caesar Salad</p>
-                        <p class="card-text-description">Esse clássico, que combina croutons crocantes, alface fresquinha e molho cremoso, ganha o
+                        <p class="card-text-description">Esse clássico, que combina croutons crocantes, alface
+                            fresquinha e molho cremoso, ganha o
                             reforço do frango desfiado.</p>
                         <div class="card-price">
-                            <p class="price-product">R$ 15,00</p>
-                            <button class="add-to-cart-btn" data-name="Caesar Salad" data-price="15.00"><i
+                            <p class="price-product">R$ 20,00</p>
+                            <button class="add-to-cart-btn" data-name="Caesar Salad" data-price="20.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
@@ -153,10 +177,11 @@
                     <img src="assets/cheddarburger.png" alt="cheddar burger" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Cheddar Burger</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>
                         <div class="card-price">
-                            <p class="price-product">R$ 25,00</p>
-                            <button class="add-to-cart-btn" data-name="Cheddar burger" data-price="25.00"><i
+                            <p class="price-product">R$ 35,00</p>
+                            <button class="add-to-cart-btn" data-name="Cheddar burger" data-price="35.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
@@ -165,7 +190,8 @@
                     <img src="assets/chickenburger.png" alt="chicken burger" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Chicken Burger</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>
                         <div class="card-price">
                             <p class="price-product">R$ 45,00</p>
                             <button class="add-to-cart-btn" data-name="Chicken Burger" data-price="45.00"><i
@@ -177,7 +203,8 @@
                     <img src="assets/doubleburger.jpg" alt="double burger" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Double Burger</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>
                         <div class="card-price">
                             <p class="price-product">R$ 42,00</p>
                             <button class="add-to-cart-btn" data-name="Double Burger" data-price="42.00"><i
@@ -189,7 +216,8 @@
                     <img src="assets/fries.png" alt="fries" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">French Fries</p>
-                        <p class="card-text-description">Nossas fritas com uma cobertura irresistível de mix de queijos e bacon. O toque final fica
+                        <p class="card-text-description">Nossas fritas com uma cobertura irresistível de mix de queijos
+                            e bacon. O toque final fica
                             por conta do molho Ranch.</p>
                         <div class="card-price">
                             <p class="price-product">R$ 42,00</p>
@@ -202,7 +230,8 @@
                     <img src="assets/onionrings.png" alt="onion rings" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Onion Rings</p>
-                        <p class="card-text-description">Feitos com cebolas selecionadas, eles são uma combinação de crocância e sabor em cada pedaço.
+                        <p class="card-text-description">Feitos com cebolas selecionadas, eles são uma combinação de
+                            crocância e sabor em cada pedaço.
                         </p>
                         <div class="card-price">
                             <p class="price-product">R$ 25,00</p>
@@ -215,7 +244,8 @@
                     <img src="assets/picanhaburger.png" alt="picanha burger" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Picanha Burger</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>.
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>.
                         <div class="card-price">
                             <p class="price-product">R$ 55,00</p>
                             <button class="add-to-cart-btn" data-name="Picanha Burger" data-price="55.00"><i
@@ -227,7 +257,8 @@
                     <img src="assets/ribburger.png" alt="rib burger" loading="lazy">
                     <div class="card-text">
                         <p class="card-text-title">Rib Burger</p>
-                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato, maionese da casa</p>
+                        <p class="card-text-description">Pão levinho de fermentação natural, burger 160g, queijo prato,
+                            maionese da casa</p>
                         <div class="card-price">
                             <p class="price-product">R$ 65,00</p>
                             <button class="add-to-cart-btn" data-name="Rib Burger" data-price="65.00"><i
@@ -242,8 +273,8 @@
                         <p class="card-text-description">
                             Pão integral, sem glúten, salada e requeijão light</p>
                         <div class="card-price">
-                            <p class="price-product">R$ 15,00</p>
-                            <button class="add-to-cart-btn" data-name="Sanduíche natural" data-price="15.00"><i
+                            <p class="price-product">R$ 25,00</p>
+                            <button class="add-to-cart-btn" data-name="Sanduíche natural" data-price="25.00"><i
                                     class="fa-solid fa-cart-shopping"></i></button>
                         </div>
                     </div>
@@ -320,6 +351,7 @@
                 <p>&copy; Copyright 2025</p>
             </div>
             <div class="footer-icons">
+                <i class="fa-brands fa-whatsapp"></i>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
             </div>
@@ -328,6 +360,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 
