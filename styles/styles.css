@@ -579,7 +579,7 @@ nav #mobile_btn {
   display: flex;
 }
 .cart-modal-button #cart-btn {
-  max-width: 100%;
+  width: 100%;
   background-color: rgb(201, 62, 62);
   color: #FFF;
   transition: opacity 0.8s;
@@ -676,7 +676,8 @@ nav #mobile_btn {
   #carouselExampleCaptions .carousel-caption {
     position: absolute;
   }
-  #carouselExampleCaptions .carousel-caption h2, #carouselExampleCaptions .carousel-caption p {
+  #carouselExampleCaptions .carousel-caption h2,
+  #carouselExampleCaptions .carousel-caption p {
     display: none;
   }
 }
@@ -721,7 +722,8 @@ nav #mobile_btn {
   .drinks {
     padding: 1dvh 1dvh;
   }
-  .burger-container, .drinks-container {
+  .burger-container,
+  .drinks-container {
     display: flex;
     flex-direction: column !important;
   }
@@ -752,10 +754,14 @@ nav #mobile_btn {
 @media (width <= 768px) {
   .cart-modal-button {
     display: flex !important;
-    background-color: aquamarine;
   }
   .cart-modal-button #cart-btn {
-    width: 100% !important;
+    width: 100%;
+  }
+}
+@media (width <= 768px) {
+  #cart-items {
+    padding: 1dvh 1dvh;
   }
 }
 * {

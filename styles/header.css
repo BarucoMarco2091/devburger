@@ -31,6 +31,9 @@ nav {
   margin: auto;
   padding: 3dvh 3dvh;
 }
+nav .logo {
+  color: #363636;
+}
 nav .nav-list {
   display: flex;
   gap: 3dvh;
@@ -48,6 +51,7 @@ nav .nav-list .nav-link:hover {
 nav .nav-icons i {
   gap: 3dvh;
   transition: color 0.8s, animation 0.8s;
+  color: #363636;
 }
 nav .nav-icons i:hover {
   color: #23A455;

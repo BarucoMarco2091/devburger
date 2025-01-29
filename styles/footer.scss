@@ -21,14 +21,23 @@ footer {
         margin: auto;
         padding-top: 5dvh;
 
+        .footer-logo {
+            color: $text;
+        }
+
         i {
             gap: 2dvh;
             transition: color .8s, animation .8s;
+            color: $text;
         }
 
         i:hover {
             color: $primaryGreen;
             animation: scale 1s infinite linear;
         }
+    }
+
+    .copy {
+        color: $text;
     }
 }

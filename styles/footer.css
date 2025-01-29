@@ -18,11 +18,18 @@ footer .footer-container {
   margin: auto;
   padding-top: 5dvh;
 }
+footer .footer-container .footer-logo {
+  color: #363636;
+}
 footer .footer-container i {
   gap: 2dvh;
   transition: color 0.8s, animation 0.8s;
+  color: #363636;
 }
 footer .footer-container i:hover {
   color: #23A455;
   animation: scale 1s infinite linear;
+}
+footer .copy {
+  color: #363636;
 }/*# sourceMappingURL=footer.css.map */
