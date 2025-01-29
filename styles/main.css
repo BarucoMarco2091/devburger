@@ -391,6 +391,7 @@
 }
 .cardapio .grid .card .card-text .card-price .price-product {
   color: rgb(201, 62, 62);
+  font-weight: 600;
 }
 .cardapio .grid .card .card-text .card-price .add-to-cart-btn {
   background-color: #282828;
