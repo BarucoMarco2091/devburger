@@ -411,7 +411,7 @@
   display: flex;
 }
 .cart-modal-button #cart-btn {
-  max-width: 100%;
+  width: 100%;
   background-color: rgb(201, 62, 62);
   color: #FFF;
   transition: opacity 0.8s;
